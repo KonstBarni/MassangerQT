@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QtSql/QSqlDatabase>
 #include <QDebug>
+#include "dialogRegistration.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,17 +16,16 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    void setRegistrationForm();
+    void setJoinForm();
     ~MainWindow();
 
 private slots:
+
     void on_actionOpen_chat_triggered();
-
     void on_actionClose_this_chat_triggered();
-
     void on_all_chatButton_clicked();
-
     void on_registrationButton_clicked();
-
     void on_joinButton_clicked();
 
 private:

@@ -15,6 +15,9 @@ public:
     explicit DialogRegistration(QWidget *parent = nullptr);
     ~DialogRegistration();
 
+private slots:
+    void on_pushButtonRegistration_clicked();
+
 private:
     Ui::DialogRegistration *ui;
 };

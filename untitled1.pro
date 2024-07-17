@@ -9,15 +9,24 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    dialogJoin.cpp \
+    dialogPrivatMessage.cpp \
+    dialogPublicChat.cpp \
     dialogRegistration.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    dialogJoin.h \
+    dialogPrivatMessage.h \
+    dialogPublicChat.h \
     dialogRegistration.h \
     mainwindow.h
 
 FORMS += \
+    dialogJoin.ui \
+    dialogPrivatMessage.ui \
+    dialogPublicChat.ui \
     dialogRegistration.ui \
     mainwindow.ui
 

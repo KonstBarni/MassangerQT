@@ -35,11 +35,23 @@ void MainWindow::on_all_chatButton_clicked()
 
 void MainWindow::on_registrationButton_clicked()
 {
-
+    DialogRegistration reg;
+    reg.setModal(1);
+    reg.exec();
 }
 
 
 void MainWindow::on_joinButton_clicked()
+{
+
+}
+
+void MainWindow::setRegistrationForm()
+{
+
+}
+
+void MainWindow::setJoinForm()
 {
 
 }

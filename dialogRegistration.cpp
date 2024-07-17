@@ -12,3 +12,9 @@ DialogRegistration::~DialogRegistration()
 {
     delete ui;
 }
+
+void DialogRegistration::on_pushButtonRegistration_clicked()
+{
+
+}
+
