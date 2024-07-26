@@ -29,7 +29,8 @@ void MainWindow::on_actionClose_this_chat_triggered()
 
 void MainWindow::on_all_chatButton_clicked()
 {
-
+    publicMess = new DialogPrivatMessage(this);
+    publicMess->show();
 }
 
 
@@ -43,7 +44,9 @@ void MainWindow::on_registrationButton_clicked()
 
 void MainWindow::on_joinButton_clicked()
 {
-
+    DialogJoin join;
+    join.setModal(1);
+    join.exec();
 }
 
 void MainWindow::setRegistrationForm()

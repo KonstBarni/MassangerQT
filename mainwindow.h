@@ -5,6 +5,8 @@
 #include <QtSql/QSqlDatabase>
 #include <QDebug>
 #include "dialogRegistration.h"
+#include "dialogJoin.h"
+#include "dialogPrivatMessage.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,5 +32,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    DialogPrivatMessage *publicMess;
 };
 #endif // MAINWINDOW_H
